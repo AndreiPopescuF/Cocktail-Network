@@ -1,0 +1,8 @@
+<div class="user-list">
+  <h4 *ngIf="connectedUsers.length == 0">There are no connected users at the moment.</h4>
+  <ul>
+    <li *ngFor="let user of connectedUsers">
+      {{ user.name }} - {{ user.status }}
+    </li>
+  </ul>
+</div>

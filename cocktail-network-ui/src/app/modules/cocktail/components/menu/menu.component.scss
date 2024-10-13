@@ -1,0 +1,48 @@
+li > a {
+  &:hover {
+    background-color: #d6e5f1;
+    border-radius: 5px;
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: #24a7e9;
+    border-radius: 5px;
+  }
+}
+
+.user-list-container {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Ascuns inițial în afara ecranului */
+  width: 300px;
+  height: 100%;
+  background-color: #f8f9fa;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease; /* Tranziție de 0.3s pentru animare */
+  padding: 20px;
+  z-index: 1000;
+}
+
+.user-list-container.open {
+  right: 0; /* Aduce secțiunea în dreapta ecranului */
+}
+
+/* Stil pentru conținutul listei de utilizatori */
+.user-list-container h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user-list-container .btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.user-list-container h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
